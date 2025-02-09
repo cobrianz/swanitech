@@ -660,6 +660,7 @@ footer {
       padding: 2rem;
       color: #000;
       top: 4rem;
+      display: none;
       gap: 3rem;
     }
 
@@ -709,6 +710,7 @@ footer {
 
     .container {
       padding: 0;
+      width: 100%;
     }
 
     .menu_open, .menu_close {
