@@ -11,7 +11,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-
+    <script src="./app.js" defer></script>
   </head>
   <body>
     <nav class="container nav">
@@ -21,18 +21,17 @@
             <h1><img src="./assets/logo.jpg" alt="" /> Swanitech</h1>
           </a>
         </div>
-        <div class="menu">
+        <div class="menu" id="menu">
           <ul>
-            <li><a href="#">Product & Services</a></li>
-            <li><a href="b">About Us</a></li>
-            <li><a href="#">Payment</a></li>
-            <li><a href="#">Clintele</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="#services" onclick="closeMenu()">Product & Services</a></li>
+            <li><a href="#about" onclick="closeMenu()">About Us</a></li>
+            <li><a href="#payment" onclick="closeMenu()">Payment</a></li>
+            <li><a href="#clientele" onclick="closeMenu()">Clintele</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
           </ul>
         </div>
-        <i class="ph ph-list menu_open"></i>
-        <i class="ph ph-x menu_close"></i>
+        <i class="ph ph-list menu_open" onclick="openMenu()" id="open_menu"></i>
+        <i class="ph ph-x menu_close" onclick="closeMenu()" id="close_menu"></i>
       </div>
     </nav>
 
@@ -45,7 +44,7 @@
             design services are tailored to meet your unique needs, ensuring
             your brand stands out in a crowded market.
           </p>
-          <a href="#">Contact us</a>
+          <a href="#contact">Contact us</a>
         </div>
         <div class="hero_right" data-aos="fade-left" data-aos-duration="1000">
           <img src="./assets/hero.avif" class="hero_img" alt="" />
@@ -70,7 +69,7 @@
       </div>
     </section>
 
-    <section class="services container">
+    <section class="services container" id="services">
       <div class="title" data-aos="fade-down" data-aos-duration="1000">
         <h2>Our Services</h2>
         <p>Elevate your brand with our services.</p>
@@ -151,7 +150,7 @@
       </div>
     </section>
 
-    <div class="about container">
+    <div class="about container" id="about">
       <img src="assets/about.jpg" alt="Design Process" data-aos="fade-up" data-aos-duration="1000"/>
       <div class="content" data-aos="fade-down" data-aos-duration="1000">
         <h2>Our Comprehensive Design Process</h2>
@@ -171,7 +170,7 @@
       </div>
     </div>
 
-    <section class="cliantele container">
+    <section class="clientele container" id="clientele">
       <div class="title" data-aos="fade-down" data-aos-duration="1000">
         <h2>Our Clientele</h2>
         <p>
@@ -227,7 +226,7 @@
       </div>
     </section>
 
-    <section class="payment container">
+    <section class="payment container" id="payment">
       <div class="title" data-aos="fade-up" data-aos-duration="1000">
         <h2>Payment Options</h2>
         <p>Flexible payment options to support our services.</p>
@@ -294,7 +293,7 @@
       </div>
     </section>
 
-    <section class="contact container">
+    <section class="contact container" id="contact">
       <div class="title" data-aos="fade-right" data-aos-duration="1000">
         <h2>Contact Us</h2>
         <p>
@@ -366,6 +365,6 @@
     <script>
       AOS.init();
     </script>
-    <script src="app.js"></script>
+
   </body>
 </html>

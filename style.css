@@ -111,6 +111,7 @@ ul {
   font-weight: bold;
   background: #fff;
   display: none;
+  cursor: pointer;
 }
 
 .nav_btns {
@@ -650,20 +651,28 @@ footer {
     }
 
     .menu ul{
+      position: absolute;
+      right: 1rem;
+      background: #fff;
+      z-index: 99;
       flex-direction: column;
       border: 1px solid #589b6b;
-      border-radius: 12px;
-      padding: 3rem;
+      padding: 2rem;
       color: #000;
-      margin-top: 2rem;
-      display: none;
+      top: 4rem;
+      gap: 3rem;
+    }
+
+    .menu_open, .menu_close {
+      right: 4rem;
+      margin-bottom: 1rem;
     }
 
     .menu_open {
       display: block;
-      right: 4rem;
-      margin-bottom: 1rem;
     }
+
+
 
     .hero_left {
       text-align: center;
