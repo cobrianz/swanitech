@@ -45,7 +45,7 @@ ul {
 .logo h1 {
   font-size: 32px;
   font-weight: 900;
-  color: #000;
+  color: #f00;;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -378,7 +378,6 @@ ul {
   align-items: center;
   justify-content: center;
   min-height: 50vh;
-  padding: 2rem;
 
 }
 
@@ -386,6 +385,7 @@ ul {
   display: flex;
   gap: 2rem;
   margin: 0 auto;
+  padding: 2rem;
 }
 
 .design h2 {
@@ -416,7 +416,9 @@ ul {
 }
 
 .design .right .tools {
+  flex-wrap: wrap;
   display: flex;
+  gap: 2rem;
 }
 
 /* Payment */
