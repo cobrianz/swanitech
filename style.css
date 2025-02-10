@@ -292,10 +292,11 @@ ul {
 }
 .content {
   padding-left: 30px;
-  width: 500px;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  padding: 2rem;
 }
 .content h2 {
   font-size: 28px;
