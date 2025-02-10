@@ -28,9 +28,11 @@ ul {
 
 
 .container {
+  width: 100%;
   max-width: 1800px;
   margin: 0 auto;
   padding: 0 20px;
+  overflow-y: hidden;
 }
 
 .nav {
@@ -275,6 +277,7 @@ ul {
 }
 
 .about {
+  width: 100%;
   display: flex;
   justify-content: center;
   background: white;
@@ -283,6 +286,7 @@ ul {
   margin: auto;
 }
 .about img {
+  width: 100%;
   max-width: 500px;
   border-radius: 10px;
 }
@@ -636,7 +640,7 @@ footer {
   @media  only screen and (max-width: 1200px){
     .container {
       padding: 0 50px;
-      width: 100vw;
+      width: 100%;
     }
 
     .logo h1 {
