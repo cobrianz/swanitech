@@ -154,9 +154,7 @@ ul {
 .hero_content {
   width: 100%;
   display: flex;
-  gap: 4rem !important;
   margin: 0 auto;
-  width: fit-content;
   flex-wrap: wrap;
   align-items: center;
   min-height: 80vh;
@@ -167,6 +165,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  width: 50%;
   max-width: 600px;
 }
 
@@ -196,14 +195,17 @@ ul {
   transition: background-color 0.3s;
 }
 
-.hero_content .hero_right{
-  width: 600px;
-  height: 600px;
+.hero_right{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero_right img {
-  width: 100%;
+  width: 80%;
   height: 100%;
+  object-fit: cover;
 }
 
 /* Title */
@@ -701,11 +703,13 @@ footer {
       text-align: center;
       justify-content: center;
       align-items: center;
-      width: 70%;
+      width: 100%;
       margin-top: 15%;
     }
 
-
+    .hero_content {
+      width: 100%;
+    }
 
     .clientele_container img {
       width: 4rem;
@@ -715,6 +719,11 @@ footer {
       width: 100vw;
       padding: 0;
       margin: 0 auto;
+    }
+
+    .swiper{
+      width: 100%;
+      padding: 0;
     }
 
     .payment {
@@ -754,6 +763,11 @@ footer {
       gap: 0;
     }
 
+    .hero_left {
+      width: 100%;
+      margin-bottom: 5%;
+    }
+
     .hero_left h1 {
       font-size: 58px;
     }
@@ -762,8 +776,18 @@ footer {
       font-size: 16px;
     }
 
-    .hero_img {
+    .hero_content {
       width: 100%;
+    }
+
+    .hero_right {
+      width: auto;
+      padding: 0;      
+    }
+
+    .hero_right img {
+      width: 100%;
+      max-width: unset;
       margin: 0 auto;
     }
 
