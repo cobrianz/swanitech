@@ -39,3 +39,4 @@ function openLightbox(img) {
 function closeLightbox() {
     document.getElementById("lightbox").style.display = "none";
 }
+

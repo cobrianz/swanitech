@@ -11,9 +11,24 @@
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+
     <script src="./app.js" defer></script>
   </head>
   <body>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/67ab1b493a842732607cea0e/1ijq6560v';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
     <nav class="container nav">
       <div class="navbar">
         <div class="logo">
@@ -261,7 +276,7 @@
             <p>Account Number</p>
             <h2>0730282195685</h2>
             </span>
-            <p>Incase of any issues with payment, please contact us on <a href="tel:+610413050963" class="green-text">+61 041 305 0963</a> or <a href="tel:+254708029999" class="green-text">+254 708 029 999</a></p>
+            <p>Incase of any issues with payment, please contact us on <a href="tel:+610413050963" class="green-text">+61 41 305 0963</a> or <a href="tel:+254708029999" class="green-text">+254 708 029 999</a></p>
 
       </div>
     </section>
@@ -333,12 +348,13 @@
             <p><i class="ph ph-phone"></i> <a href="tel:+254708029999">+614 1305 0963</a></p>
           </div>
           <div class="right" data-aos="fade-right" data-aos-duration="1000">
-            <form>
-              <input type="text" placeholder="Full name" />
-              <input type="email" placeholder="Email" />
-              <textarea placeholder="Message"></textarea>
-              <button type="submit">Contact Us</button>
-            </form>
+            <form action="https://formsubmit.co/your-email@example.com" method="POST">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="message" placeholder="Your Message" required></textarea>
+              <button type="submit">Send</button>
+          </form>
+          
           </div>
         </div>
       </div>
@@ -382,6 +398,5 @@
     <script>
       AOS.init();
     </script>
-
   </body>
 </html>
