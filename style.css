@@ -737,12 +737,6 @@ footer {
       width: 100%;
     }
 
-    .nav {
-      position: fixed;
-      background: #ffffffa1;
-      z-index: 40;
-      padding-bottom: 1rem;
-    }
 
     .logo h1 {
       font-size: 22px;
@@ -761,7 +755,7 @@ footer {
       position: absolute;
       right: 1rem;
       background: #fff;
-      z-index: 99;
+      z-index: 999;
       flex-direction: column;
       border: 1px solid #589b6b;
       padding: 2rem;
