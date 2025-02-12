@@ -12,8 +12,19 @@
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "J0OsLw9kym6l9KVex",
+      });
+   })();
+</script>
 
     <script src="./app.js" defer></script>
+    <script src="./email.js" defer></script>
   </head>
   <body>
     <!--Start of Tawk.to Script-->
@@ -28,6 +39,7 @@
   s0.parentNode.insertBefore(s1,s0);
   })();
   </script>
+
   <!--End of Tawk.to Script-->
     <nav class="container nav">
       <div class="navbar">
@@ -43,6 +55,7 @@
             <li><a href="#payment" onclick="closeMenu()">Payment</a></li>
             <li><a href="#clientele" onclick="closeMenu()">Clintele</a></li>
             <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+            <li><a href="#blog" onclick="closeMenu()">Blog</a></li>
           </ul>
         </div>
         <i class="ph ph-list menu_open" onclick="openMenu()" id="open_menu"></i>
@@ -340,25 +353,36 @@
             <h1>Let's talk!</h1>
             <p>
               <i class="ph ph-envelope-simple"></i>
-              <a href="mailto:info@swanitechventuresltd.com"
-                >info@swanitechventuresltd.com</a
+              <a href="mailto:jswanya@swanitechventuresltd.com"
+                >jswanya@swanitechventuresltd.com</a
               >
             </p>
             <p><i class="ph ph-phone"></i> <a href="tel:+254708029999">+254 708 029 999</a></p>
-            <p><i class="ph ph-phone"></i> <a href="tel:+61 413 050 963">+61413050963</a></p>
+            <p><i class="ph ph-phone"></i> <a href="tel:+61 413 050 963">+61 413 050 963</a></p>
           </div>
           <div class="right" data-aos="fade-right" data-aos-duration="1000">
-            <form action="https://formsubmit.co/your-email@example.com" method="POST">
-              <input type="text" name="name" placeholder="Your Name" required>
-              <input type="email" name="email" placeholder="Your Email" required>
-              <textarea name="message" placeholder="Your Message" required></textarea>
-              <button type="submit">Send</button>
+            <form id="contact-form" onsubmit="contact(event)">
+              <label>Name</label>
+              <input type="text" id="user_name" name="user_name" required>
+              
+              <label>Email</label>
+              <input type="email" id="user_email" name="user_email" required>
+              
+              <label>Message</label>
+              <textarea id="message" name="message" required></textarea>
+              
+              <input type="submit" id="submit-btn" value="Send">
+              
+              
           </form>
-          
           </div>
         </div>
       </div>
     </section>
+
+    <div id="loader">Sending...</div>
+    <p id="success-message">Email sent successfully!</p>
+    <p id="error-message">Failed to send email. Please try again.</p>
 
     <footer>
       <div class="footer-container">
@@ -380,10 +404,10 @@
         <div class="footer-section">
           <h3>Follow Us</h3>
           <div class="social-icons">
-            <a href="#"><i class="ph ph-facebook-logo"></i></a>
-            <a href="#"><i class="ph ph-twitter-logo"></i></a>
-            <a href="#"><i class="ph ph-linkedin-logo"></i></a>
-            <a href="#"><i class="ph ph-instagram-logo"></i></a>
+            <a href="https://www.facebook.com/254SVL" target="_blank"><i class="ph ph-facebook-logo"></i></a>
+            <a href="https://www.instagram.com/swanitech?igsh=d2V5YWZsYjlza3hr" target="_blank"><i class="ph ph-instagram-logo"></i></a>
+            <a href="https://x.com/SWANYAJOHN?s=09" target="_blank"><i class="ph ph-x-logo"></i></a>
+            
           </div>
         </div>
       </div>
@@ -393,6 +417,7 @@
         <p>© 2025 Swanitech Ventures Limited. All rights reserved.</p>
       </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

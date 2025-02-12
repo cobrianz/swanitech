@@ -605,7 +605,8 @@ ul {
 .contact_container textarea::-webkit-scrollbar {
     display: none;
 }
-.contact_container button {
+.contact_container #submit-btn {
+  width: fit-content;
   background-color: #2e7d32;
   color: white;
   padding: 10px 20px;
@@ -614,7 +615,7 @@ ul {
   cursor: pointer;
   margin-top: 10px;
 }
-.contact_container button:hover {
+.contact_container #submit-btn:hover {
   background-color: #1b5e20;
 }
 
@@ -682,6 +683,40 @@ footer {
     font-size: 14px;
     color: #aaa;
   }
+
+  #loader {
+    display: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 1rem 3rem;
+    border-radius: 12px;
+    color: green;
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    translate: transform(-50%, -50%);
+    z-index: 22;
+    background: #e2f1e3;
+}
+#success-message, #error-message {
+    display: none;
+    font-size: 14px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    translate: transform(-50%, -50%);
+}
+#success-message {
+    color: green;
+    background: #e8f5e9;
+}
+#error-message {
+    color: red;
+    background: #ffebee;
+}
   
   /* RESPONSIVENES */
 
