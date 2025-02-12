@@ -717,7 +717,18 @@ footer {
     color: red;
     background: #ffebee;
 }
+
+.brian {
+  color: #fff;
+  margin-top: 3rem;
+}
   
+.brian a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: bold;
+  transition: color 0.3s;
+}
   /* RESPONSIVENES */
 
   @media  only screen and (max-width: 1200px){
